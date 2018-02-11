@@ -1,0 +1,38 @@
+{
+  "name": "add-deploy",
+  "version": "1.1.0",
+  "description": "Create circleci node deploy for now and heroku",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanford/add-deploy.git"
+  },
+  "homepage": "https://github.com/hanford/add-deploy",
+  "bugs": "https://github.com/hanford/add-deploy/issues",
+  "authors": [
+    "Jack Hanford"
+  ],
+  "license": "MIT",
+  "files": "index.js",
+  "bin": {
+    "add-deploy": "./index.js"
+  },
+  "dependencies": {
+    "commander": "~2.9.0",
+    "mkdirp": "~0.5.1",
+    "titlecase": "~1.1.2"
+  },
+  "tags": [
+    "react",
+    "create",
+    "component",
+    "purecomponent",
+    "cli"
+  ],
+  "keywords": [
+    "react",
+    "create",
+    "component",
+    "purecomponent",
+    "cli"
+  ]
+}

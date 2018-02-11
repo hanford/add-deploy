@@ -1,0 +1,31 @@
+general:
+  artifacts:
+    - bundle-cop
+
+machine:
+  node:
+    version: 9
+
+dependencies:
+  pre:
+    - npm i -g now-cli ci-github
+    - git config --global user.email "ci@circleci.com"
+    - git config --global user.name "CircleCi bot"
+
+deployment:
+  feature:
+    branch: /^(?!master$|production$).*$/
+    commands:
+      - ./scripts/deploy.sh feature:
+          timeout: 1200
+  development:
+    branch: master
+    commands:
+      - ./scripts/deploy.sh development:
+          timeout: 1200
+  production:
+    branch: production
+    commands:
+      - ./scripts/deploy.sh production:
+          timeout: 1200
+
