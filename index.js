@@ -3,6 +3,7 @@
 const path = require('path')
 const fs = require('fs')
 const mkdirp = require('mkdirp')
+const chalk = require('chalk')
 const { version } = require('./package.json')
 
 const DeployScript = require('./components/deploy-script')
@@ -31,5 +32,5 @@ function createDeploy (name) {
   DeployScript(rootDirectory, name)
   CircleCi(rootDirectory, name)
 
-  console.log(`Deploy ${name} created`)
+  console.log(chalk.cyan(`Deploy ${name} created`))
 }

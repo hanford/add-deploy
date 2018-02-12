@@ -5,13 +5,7 @@ const toTitleCase = require('titlecase')
 module.exports = CircleCi
 
 function CircleCi (dir, name) {
-  let fileName = 'circle.yml'
-
-  // try {
-  //   fileName = eval(fileName)
-  // } catch (e) {}
-
-  const file = path.join(dir, fileName)
+  const file = path.join(dir, 'circle.yml')
 
   const body = fs
     .readFileSync(path.resolve(__dirname, './circle-template.yml'), 'utf-8')

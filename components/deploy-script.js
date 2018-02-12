@@ -5,13 +5,7 @@ const toTitleCase = require('titlecase')
 module.exports = deployScript
 
 function deployScript (dir, name) {
-  let fileName = 'deploy.sh'
-
-  // try {
-  //   fileName = eval(fileName)
-  // } catch (e) {}
-
-  const file = path.join(dir, fileName)
+  const file = path.join(dir, 'deploy.sh')
 
   const body = fs
     .readFileSync(path.resolve(__dirname, './deploy-template.sh'), 'utf-8')
