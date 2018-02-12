@@ -14,10 +14,10 @@ $ npm install -g add-deploy
 # Generate circle.yml and deploy.sh files
 $ add-deploy
 
-# deploy.sh script to deploy to `now.sh`
+# deploy.sh script to deploy to now.sh
 $ add-deploy --now
 
-# deploy.sh script to deploy to `now.sh` and heroku
+# deploy.sh script to deploy to now.sh and heroku
 $ add-deploy --now --heroku
 ```
 
