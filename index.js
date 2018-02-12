@@ -4,7 +4,6 @@ const path = require('path')
 const fs = require('fs')
 const chalk = require('chalk')
 const { version } = require('./package.json')
-const { cwd } = process
 
 const DeployScript = require('./components/deploy-script')
 const CircleCi = require('./components/circleci')
@@ -22,7 +21,7 @@ const program = require('commander')
 createDeploy(componentName)
 
 function createDeploy (name) {
-  const cwd = cwd()
+  const cwd = process.cwd()
 
   DeployScript(cwd, name, program.now, program.heroku)
   CircleCi(cwd, name)
