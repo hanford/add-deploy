@@ -4,13 +4,13 @@ Generate the deploy / ci boilerplate for node apps
 
 ## Install
 
-Run
-
-```npm install -g add-deploy```
+```sh
+$ npm install -g add-deploy
+```
 
 ## Usage
 
-```
+```sh
 # Generate circle.yml and deploy.sh files
 $ add-deploy
 
@@ -23,4 +23,4 @@ $ add-deploy --now --heroku
 
 ## License
 
-MIT © [Jack Hanford](http://jackhanford.com) -->
+MIT © [Jack Hanford](http://jackhanford.com)
