@@ -9,10 +9,6 @@ function CircleCi (dir, name) {
 
   const body = fs
     .readFileSync(path.resolve(__dirname, './circle-template.yml'), 'utf-8')
-    // .split('Template')
-    // .join(toTitleCase(name))
-    // .split('template')
-    // .join(name)
 
   return fs.writeFileSync(file, body)
 }

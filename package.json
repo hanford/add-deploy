@@ -1,6 +1,6 @@
 {
   "name": "add-deploy",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "description": "Create circleci node deploy for now and heroku",
   "repository": {
     "type": "git",
@@ -24,16 +24,16 @@
   },
   "tags": [
     "react",
-    "create",
-    "component",
-    "purecomponent",
+    "now.sh",
+    "heroku",
+    "circleci",
     "cli"
   ],
   "keywords": [
     "react",
-    "create",
-    "component",
-    "purecomponent",
+    "now.sh",
+    "heroku",
+    "circleci",
     "cli"
   ]
 }
