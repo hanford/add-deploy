@@ -8,7 +8,7 @@ function deployScript (dir, name, now, heroku) {
   const file = path.join(dir, 'deploy.sh')
 
   let body = fs
-    .readFileSync(path.resolve(__dirname, './deploy-template.sh'), 'utf-8')
+    .readFileSync(path.resolve(dir, './deploy-template.sh'), 'utf-8')
 
   if (now) {
     body = body.split('# now_feature').join(now_feat)
