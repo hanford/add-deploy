@@ -29,15 +29,15 @@ const now_dev =
   'DEV_ENV=`now -t ${NOW_TOKEN} --team eaze -e EAZE_ENVIRONMENT=development -e COMMIT_SHA=${CIRCLE_SHA1} --force`' + '\n' +
   // 'printf "\n" # print new line!' + '\n' +
   'echo Environment: $DEV_ENV' + '\n' +
-  'echo Pointing dev-eaze.now.sh to $DEV_ENV' + '\n' +
-  'now -t ${NOW_TOKEN} --team eaze alias $DEV_ENV dev-eaze' + '\n' +
+  // 'echo Pointing dev-eaze.now.sh to $DEV_ENV' + '\n' +
+  // 'now -t ${NOW_TOKEN} --team eaze alias $DEV_ENV dev-eaze' + '\n' +
   ''  +
   'echo Deploying staging to eaze.now.sh' + '\n' +
   'STAGING_ENV=`now -t ${NOW_TOKEN} --team eaze -e EAZE_ENVIRONMENT=production -e COMMIT_SHA=${CIRCLE_SHA1} --force`' + '\n' +
   // 'printf "\n" # print new line!' + '\n' +
   'echo Environment: $STAGING_ENV' + '\n' +
   'echo Pointing eaze.now.sh to $STAGING_ENV' + '\n' +
-  'now -t ${NOW_TOKEN} --team eaze alias $STAGING_ENV eaze  '
+  // 'now -t ${NOW_TOKEN} --team eaze alias $STAGING_ENV eaze  '
 
 const now_feat =
   'echo Deploying to now.sh' + '\n' +
@@ -52,7 +52,7 @@ const now_prod =
   'PROD_ENV=`now -t ${NOW_TOKEN} --team eaze -e EAZE_ENVIRONMENT=production -e COMMIT_SHA=${CIRCLE_SHA1} --force`' + '\n' +
   'printf "\n" # print new line!' + '\n' +
   'echo Environment: $PROD_ENV' + '\n' +
-  'now -t ${NOW_TOKEN} --team eaze alias $PROD_ENV www.eaze.com'
+  // 'now -t ${NOW_TOKEN} --team eaze alias $PROD_ENV www.eaze.com'
 
 const heroku_dev =
   'heroku config:set COMMIT_SHA=$CIRCLE_SHA1 --app $DEVELOPMENT'  + '\n' +
