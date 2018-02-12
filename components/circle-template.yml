@@ -16,16 +16,16 @@ deployment:
   feature:
     branch: /^(?!master$|production$).*$/
     commands:
-      - ./scripts/deploy.sh feature:
+      - ./deploy.sh feature:
           timeout: 1200
   development:
     branch: master
     commands:
-      - ./scripts/deploy.sh development:
+      - ./deploy.sh development:
           timeout: 1200
   production:
     branch: production
     commands:
-      - ./scripts/deploy.sh production:
+      - ./deploy.sh production:
           timeout: 1200
 
