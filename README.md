@@ -1,6 +1,6 @@
 # add-deploy
 
-Generate the deploy / ci boilerplate for node apps
+Generate the deploy script / circle.yml boilerplate for node apps with an optional heroku failover
 
 ## Install
 

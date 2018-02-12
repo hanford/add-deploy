@@ -39,13 +39,13 @@ const now_dev =
   'echo Pointing eaze.now.sh to $STAGING_ENV' + '\n' +
   'now -t ${NOW_TOKEN} --team eaze alias $STAGING_ENV eaze  '
 
-  const now_feat =
-    'echo Deploying to now.sh' + '\n' +
-    'FEATURE_ENV=`now -t $NOW_TOKEN --team eaze -e COMMIT_SHA=$CIRCLE_SHA1`' + '\n' +
-    // 'printf "\n" # print new line!' + '\n' +
-    'echo Environment: $FEATURE_ENV' + '\n' +
-    // 'echo Begin runnin bundle-cop' + '\n' +
-    'github --comment "Now Environment" --link $FEATURE_ENV'
+const now_feat =
+  'echo Deploying to now.sh' + '\n' +
+  'FEATURE_ENV=`now -t $NOW_TOKEN --team eaze -e COMMIT_SHA=$CIRCLE_SHA1`' + '\n' +
+  // 'printf "\n" # print new line!' + '\n' +
+  'echo Environment: $FEATURE_ENV' + '\n' +
+  // 'echo Begin runnin bundle-cop' + '\n' +
+  'github --comment "Now Environment" --link $FEATURE_ENV'
 
 const now_prod =
   'echo Deploying production to www.eaze.com' + '\n' +
