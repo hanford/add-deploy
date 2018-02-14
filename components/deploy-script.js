@@ -36,7 +36,7 @@ const now_dev =
   'STAGING_ENV=`now -t ${NOW_TOKEN} --team eaze -e EAZE_ENVIRONMENT=production -e COMMIT_SHA=${CIRCLE_SHA1} --force`' + '\n' +
   // 'printf "\n" # print new line!' + '\n' +
   'echo Environment: $STAGING_ENV' + '\n' +
-  'echo Pointing eaze.now.sh to $STAGING_ENV' + '\n' +
+  'echo Pointing eaze.now.sh to $STAGING_ENV' + '\n'
   // 'now -t ${NOW_TOKEN} --team eaze alias $STAGING_ENV eaze  '
 
 const now_feat =
