@@ -1,6 +1,6 @@
 {
   "name": "add-deploy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create circleci node deploy for now and heroku",
   "repository": {
     "type": "git",
