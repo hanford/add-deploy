@@ -51,7 +51,7 @@ const now_prod =
   'echo Deploying production to www.eaze.com' + '\n' +
   'PROD_ENV=`now -t ${NOW_TOKEN} --team eaze -e EAZE_ENVIRONMENT=production -e COMMIT_SHA=${CIRCLE_SHA1} --force`' + '\n' +
   'printf "\n" # print new line!' + '\n' +
-  'echo Environment: $PROD_ENV' + '\n' +
+  'echo Environment: $PROD_ENV' + '\n'
   // 'now -t ${NOW_TOKEN} --team eaze alias $PROD_ENV www.eaze.com'
 
 const heroku_dev =
